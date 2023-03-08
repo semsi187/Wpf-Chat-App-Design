@@ -1,0 +1,185 @@
+﻿<Window x:Class="Wpf_Chat_App_Design.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Chat_App_Design"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="460">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="background\iosWllp.jpg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Label Background="#1C1C1E" HorizontalAlignment="Center" VerticalAlignment="Center" Height="52" Width="460" Foreground="Black"/>
+        <Label Background="#1C1C1E" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52" Width="460" Margin="0,50,0,0" Grid.RowSpan="2"/>
+
+        <Label Foreground="White" FontFamily="SF Pro" FontWeight="DemiBold" Content=" 11:34" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" Height="26"/>
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="406,0,0,0" VerticalAlignment="Top" Height="22" Width="36">
+            <Image Source="icons\charge.png"></Image>
+        </Button>
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="379,0,0,0" VerticalAlignment="Top" Height="22" Width="36">
+            <Image Source="icons\wifi.png"></Image>
+        </Button>
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="352,0,0,0" VerticalAlignment="Top" Height="20" Width="36">
+            <Image Source="icons\signal.png"></Image>
+        </Button>
+
+
+
+        <Button BorderThickness="0" Width="45" Height="45" HorizontalAlignment="Left" Margin="58,1,0,0" VerticalAlignment="Top" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="100"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="6,7,0,0" VerticalAlignment="Top" Height="30" Width="30" Grid.Row="1">
+            <Image Source="icons\wpBack.png" Height="30" Width="30"></Image>
+        </Button>
+
+        <Label Foreground="White" FontFamily="SF Pro" FontWeight="DemiBold" Content="+994 55 226 34 56" HorizontalAlignment="Left" Margin="110,11,0,0" Grid.Row="1" VerticalAlignment="Top" Height="35" Width="155" FontSize="15"/>
+
+
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="394,7,0,0" VerticalAlignment="Top" Height="30" Width="30" Grid.Row="1">
+            <Image Source="icons\phone.png" Height="30" Width="30"></Image>
+        </Button>
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="346,7,0,0" VerticalAlignment="Top" Height="30" Width="30" Grid.Row="1">
+            <Image Source="icons\videoCall.png" Height="30" Width="30"></Image>
+        </Button>
+
+        <Button Foreground="#DFDFE7" Background="#29292C" FontWeight="Bold" BorderThickness="0" Content="Today" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="90" Height="23">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="9"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Opacity="0.9" Background="#1C1C1E" FontWeight="Bold" BorderThickness="0" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Width="280" Height="68" Grid.RowSpan="2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="9"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Foreground="#FFBBB855" FontWeight="DemiBold" Content="Messages and calls are end-to-end" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Height="26"/>
+        <Label Foreground="#FFBBB855" FontWeight="DemiBold" Content="encrypted. No one outside of this chat, not" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="26"/>
+        <Label Foreground="#FFBBB855" FontWeight="DemiBold" Content="even WhatsApp, can read or listen to them. Tap" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Height="26" Margin="0,29,0,0" Grid.RowSpan="2"/>
+        <Label Foreground="#FFBBB855" FontWeight="DemiBold" Content="to  learn more." HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Height="26" Margin="0,42,0,0" Grid.RowSpan="2"/>
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="113,50,0,0" VerticalAlignment="Top" Height="30" Width="30" Grid.Row="2" Grid.RowSpan="2">
+            <Image Source="icons\lock.png" Height="15" Width="15"></Image>
+        </Button>
+
+        <Label Background="#1C1C1E" HorizontalAlignment="Center" VerticalAlignment="Top" Height="52" Width="460" Foreground="Black" Grid.Row="14" Margin="0,10,0,0"/>
+        <Label Background="#1C1C1E" HorizontalAlignment="Center" VerticalAlignment="Top" Height="36" Width="460" Foreground="Black" Grid.Row="13" Margin="0,27,0,0" Grid.RowSpan="2"/>
+
+        <Button BorderThickness="0" Background="#3C3C3D" HorizontalAlignment="Left" Margin="49,37,0,0" Grid.Row="13" VerticalAlignment="Top" Grid.RowSpan="2" Height="28" Width="303">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="10,35,0,0" Grid.Row="13" VerticalAlignment="Top" Width="30" Height="30" Grid.RowSpan="2">
+            <Image Source="icons\add.png" Height="30" Width="30"></Image>
+        </Button>
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="362,35,0,0" Grid.Row="13" VerticalAlignment="Top" Width="30" Height="30" Grid.RowSpan="2">
+            <Image Source="icons\camera.png" Height="30" Width="30"></Image>
+        </Button>
+        <Button BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="398,35,0,0" Grid.Row="13" VerticalAlignment="Top" Width="30" Height="30" Grid.RowSpan="2">
+            <Image Source="icons\mic.png" Height="25" Width="27"></Image>
+        </Button>
+
+        <Button BorderThickness="0" Foreground="White" HorizontalAlignment="Center" Margin="0,40,0,0" Grid.Row="14" VerticalAlignment="Top" Width="158" Height="7">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!-- mesajlar ; -->
+
+        <Button  Background="#FF7B7B7B" BorderThickness="0" HorizontalAlignment="Left" Margin="6,52,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.RowSpan="2" Height="35" Width="97">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Foreground="White" FontWeight="DemiBold" FontSize="16" Content="Salam" HorizontalAlignment="Left" Margin="10,2,0,0" Grid.Row="5" VerticalAlignment="Top"/>
+        <Label Foreground="#FF272727" FontWeight="DemiBold" FontSize="11" Content="11:23" HorizontalAlignment="Left" Margin="69,0,0,0" Grid.Row="5" VerticalAlignment="Center" Height="24" Width="36"/>
+
+
+        <Button  Background="#1F5A47" BorderThickness="0" HorizontalAlignment="Left" Margin="341,0,0,0" Grid.Row="6" VerticalAlignment="Center" Height="35" Width="97">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Foreground="White" FontWeight="DemiBold" FontSize="16" Content="Salam" HorizontalAlignment="Left" Margin="384,0,0,0" Grid.Row="6" VerticalAlignment="Center"/>
+        <Label Foreground="#4F9881" FontWeight="DemiBold" FontSize="11" Content="11:29" HorizontalAlignment="Left" Margin="341,22,0,0" Grid.Row="6" VerticalAlignment="Top" Height="23" Width="36"/>
+
+        <Button  Background="#1F5A47" BorderThickness="0" HorizontalAlignment="Left" Margin="322,0,0,0" Grid.Row="7" VerticalAlignment="Center" Height="35" Width="116">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Foreground="White" FontWeight="DemiBold" FontSize="16" Content="Kim idi?" HorizontalAlignment="Left" Margin="370,9,0,0" Grid.Row="7" VerticalAlignment="Top"/>
+        <Label Foreground="#4F9881" FontWeight="DemiBold" FontSize="11" Content="11:29" HorizontalAlignment="Left" Margin="322,21,0,0" Grid.Row="7" VerticalAlignment="Top" Height="23" Width="36"/>
+
+
+        <Button Background="#FF7B7B7B" BorderThickness="0" HorizontalAlignment="Left" Margin="6,5,0,0" Grid.Row="8" VerticalAlignment="Top" Height="40" Width="205">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Foreground="White" FontWeight="DemiBold" FontSize="16" Content="Nerbaladiye qadan alim" HorizontalAlignment="Left" Margin="10,2,0,0" Grid.Row="8" VerticalAlignment="Top"/>
+        <Label Foreground="#FF272727" FontWeight="DemiBold" FontSize="11" Content="11:30" HorizontalAlignment="Left" Margin="175,21,0,0" Grid.Row="8" VerticalAlignment="Top" Height="24" Width="36"/>
+
+        <Button Background="#FF7B7B7B" BorderThickness="0" HorizontalAlignment="Left" Margin="6,0,0,0" Grid.Row="9" VerticalAlignment="Center" Height="40" Width="169">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Foreground="White" FontWeight="DemiBold" FontSize="16" Content="Xaladennik ustasi" HorizontalAlignment="Left" Margin="10,4,0,0" Grid.Row="9" VerticalAlignment="Top"/>
+        <Label Foreground="#FF272727" FontWeight="DemiBold" FontSize="11" Content="11:30" HorizontalAlignment="Left" Margin="139,23,0,0" Grid.Row="9" VerticalAlignment="Top" Height="24" Width="36"/>
+
+    </Grid>
+</Window>
